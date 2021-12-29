@@ -1,0 +1,16 @@
+version: 3
+  services:
+
+  webapp:
+    image: nginx
+    container_name: nginx
+    ports: 
+      - 80:80
+
+  banco:
+    build:
+      context: .
+    ports:
+      - 3306:3306
+    vol:
+      - datavolume: /var/lib/mysql
