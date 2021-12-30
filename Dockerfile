@@ -6,3 +6,5 @@ RUN apt update && apt install vim \
 
 ENV MYSQL_ROOT_PASSWORD=root
 ENV MYSQL_DATABASE=mydb
+
+EXPOSE 3306
